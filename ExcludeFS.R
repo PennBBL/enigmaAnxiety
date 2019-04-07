@@ -19,7 +19,7 @@ fsExclude$SubjID <- fsExclude$bblid
 fsExclude_short <- fsExclude[c(grep("SubjID|fsFinalExclude",names(fsExclude)))]
 
 ####################
-#### Merge data ####
+#### MERGE DATA ####
 ####################
 
 subjData <- merge(volume,fsExclude_short,by="SubjID",all=FALSE)
